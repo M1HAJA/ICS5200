@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="The Role of AI in Cyberbullying on Social Media: A Dual Approach for Malta — Jan Lawrence Formosa" />
+  <title>AI &amp; Cyberbullying in Malta — Jan Lawrence Formosa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <main class="wrap" id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="hero-tag">M.Sc. Dissertation &nbsp;·&nbsp; University of Malta &nbsp;·&nbsp; March 2026</div>
+          <h1>The Role of Artificial Intelligence in Cyberbullying on Social Media</h1>
+          <p class="lead">
+            A dual-approach study investigating how AI both amplifies and mitigates cyberbullying
+            within Malta's unique digital environment — integrating socio-technical research with
+            a proof-of-concept Maltese-language detection model.
+          </p>
+          <div class="hero-meta">
+            <span><strong>Author:</strong> Jan Lawrence Formosa</span>
+            <span><strong>Supervisor:</strong> Prof. Vanessa Camilleri</span>
+            <span><strong>Department:</strong> Artificial Intelligence, Faculty of ICT</span>
+          </div>
+        </div>
+        <aside class="hero-right">
+          <img src="UM.png" alt="University of Malta" class="hero-logo" />
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-title"><h2>About This Research</h2></div>
+      <div class="grid">
+        <article class="card">
+          <h3>What is this dissertation?</h3>
+          <p>
+            A socio-technical study examining the dual role of AI in cyberbullying within the Maltese context.
+            It combines a systematic literature review, PESTLE-based horizon scanning, and expert interviews
+            with the development and evaluation of a BERT-based cyberbullying detection model trained on
+            Maltese-language data.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Why does it matter?</h3>
+          <p>
+            Malta's small, tightly interconnected population amplifies the psychological and reputational
+            consequences of online harm. This research contributes a locally grounded framework for
+            responsible AI governance, policy development, and the design of safer digital environments.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- KEY OBJECTIVES -->
+    <section id="work">
+      <div class="section-title"><h2>Research Objectives</h2></div>
+      <div class="cards3">
+        <article class="mini">
+          <h3>Systematic Literature Review</h3>
+          <p>A PRISMA-guided review across ACM, IEEE Xplore, ProQuest, and EBSCO — identifying trends in AI-assisted cyberbullying, detection architectures, and ethical governance.</p>
+        </article>
+        <article class="mini">
+          <h3>Horizon Scanning</h3>
+          <p>PESTLE-structured foresight analysis of the SLR corpus, surfacing emerging technological, social, legal, and regulatory signals relevant to AI-driven online harm.</p>
+        </article>
+        <article class="mini">
+          <h3>Expert Interviews</h3>
+          <p>Semi-structured interviews with professionals from academic, regulatory, and industry backgrounds, contextualising findings within Malta's digital ecosystem.</p>
+        </article>
+        <article class="mini">
+          <h3>Detection Model</h3>
+          <p>A fine-tuned BERTu transformer model trained on Maltese-language sentiment data, demonstrating the feasibility of automated cyberbullying detection.</p>
+        </article>
+        <article class="mini">
+          <h3>Malta-Centric Framework</h3>
+          <p>A structured synthesis of research and technical findings offering actionable, locally relevant considerations for AI-driven cyberbullying mitigation.</p>
+        </article>
+        <article class="mini">
+          <h3>Policy Contribution</h3>
+          <p>Bridging the gap between AI misuse and mitigation, informing responsible deployment and supporting Malta's emerging national AI governance landscape.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- LITERATURE MAP -->
+    <section id="literature-map">
+      <div class="section-title">
+        <h2 class="litmap-heading">Literature Map (PESTLE)</h2>
+      </div>
+      <div class="card litmap-card">
+        <div class="pestle-map" id="pestleMap" aria-label="PESTLE literature map"></div>
+      </div>
+    </section>
+
+    <!-- KEY FINDINGS — static blocks -->
+    <section id="findings">
+      <div class="section-title"><h2>Key Findings</h2></div>
+      <div class="cards3">
+        <article class="mini finding-card">
+          <h3>AI as a Dual-Use Technology</h3>
+          <p>AI simultaneously amplifies and mitigates cyberbullying. Generative models, deepfakes, and automated bots have lowered barriers to harassment at scale, while transformer-based detection systems offer scalable moderation solutions. AI's impact depends entirely on how it is designed, deployed, and governed.</p>
+        </article>
+        <article class="mini finding-card">
+          <h3>Malta's Unique Context</h3>
+          <p>Malta's small, closely interconnected population intensifies the consequences of online harm. Local data shows 24.5% of Maltese adolescents aged 13–16 experienced cyberbullying, and 79% of Maltese respondents expressed high concern about AI-generated fake content — well above the EU average of 68%.</p>
+        </article>
+        <article class="mini finding-card">
+          <h3>BERTu Detection Model Results</h3>
+          <p>The fine-tuned BERTu model achieved a macro F1 score of 0.867, outperforming the multilingual mBERTu model (0.839). The Maltese-specific model showed stronger performance and stability. Both models struggled with sarcasm and irony — a key limitation for real-world deployment.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- MODEL DEMO -->
+    <section id="demo">
+      <div class="section-title"><h2>Try the Detection Model</h2></div>
+
+      <div class="card demo-card">
+        <p class="demo-intro">
+          Enter a piece of text below — in Maltese, English, or mixed — to classify it as
+          <strong>Harmful</strong> or <strong>Non-Harmful</strong> using the fine-tuned models
+          from this research. Both models were trained on Maltese-language data.
+        </p>
+
+        <!-- Model toggle -->
+        <div class="demo-toggle" role="group" aria-label="Select model">
+          <button class="toggle-btn active" id="btnBertu" type="button" data-model="bertu">
+            BERTu
+            <span class="toggle-badge">F1 0.867</span>
+          </button>
+          <button class="toggle-btn" id="btnMbertu" type="button" data-model="mbertu">
+            mBERTu
+            <span class="toggle-badge">F1 0.839</span>
+          </button>
+        </div>
+
+        <p class="demo-model-note" id="demoModelNote"></p>
+
+        <!-- Textarea -->
+        <div class="demo-input-wrap">
+          <textarea
+            id="demoInput"
+            class="demo-textarea"
+            rows="4"
+            placeholder="e.g. Int vera stupid, ma taf xejn. / You did a great job today."
+            maxlength="512"
+          ></textarea>
+          <div class="demo-charcount"><span id="demoCharCount">0</span> / 512</div>
+        </div>
+
+        <!-- Classify button -->
+        <button class="demo-btn" id="demoBtn" type="button">Classify Text</button>
+
+        <!-- Result area -->
+        <div class="demo-result" id="demoResult" aria-live="polite"></div>
+
+        <!-- Disclaimer -->
+        <p class="demo-disclaimer">
+          ⚠️ This is a research proof-of-concept trained on a proxy dataset. Results may not reflect
+          real-world moderation accuracy. Do not use for actual content moderation decisions.
+        </p>
+      </div>
+    </section>
+
+    <!-- MODAL: PESTLE papers list -->
+    <div class="modal" id="pestleModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="pestleModalTitle">
+      <div class="modal-card card modal-wide" role="document">
+        <div class="modal-head">
+          <h3 id="pestleModalTitle">PESTLE</h3>
+          <button class="modal-close" type="button" data-close="pestle" aria-label="Close">✕</button>
+        </div>
+        <div class="modal-meta" id="pestleModalMeta"></div>
+        <div class="paper-list" id="pestleModalList"></div>
+      </div>
+    </div>
+
+    <!-- RESOURCES -->
+    <section id="resources">
+      <div class="section-title"><h2>Outputs and Resources</h2></div>
+      <div class="resources">
+        <div class="card">
+          <h3>Downloads</h3>
+          <a class="download" aria-disabled="true">
+            <span><b>Full Dissertation</b><em>(Coming Soon)</em></span>
+          </a>
+          <a class="download" aria-disabled="true">
+            <span><b>Detection Model</b><em>BERTu Cyberbullying Classifier (Coming Soon)</em></span>
+          </a>
+          <a class="download" aria-disabled="true">
+            <span><b>Research Paper</b><em>(Coming Soon)</em></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNER LOGOS -->
+    <section id="project">
+      <div class="card logo-card">
+        <img src="UM.png" alt="University of Malta logo" class="partner-logo" />
+        <div class="partner-text">
+          <strong>Department of Artificial Intelligence</strong>
+          <span>Faculty of Information &amp; Communication Technology</span>
+          <span>University of Malta &nbsp;·&nbsp; March 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="#top">Back to top ↑</a>
+    </footer>
+
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
