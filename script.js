@@ -8,8 +8,45 @@ document.addEventListener("DOMContentLoaded", () => {
      ============================================================ */
 
   const CSV_ROWS = [
-    // ── ADD YOUR PAPERS BELOW THIS LINE ──────────────────────────────────────
-    // ["Paper Title Here", "Political, Social, Technological", "https://link"],
+    // ── PAPERS — add URLs in the third field when available ──────────────────
+    ["Cyberbullying Detection: An Ensemble Based Machine Learning Approach", "Technological, Social", "https://ieeexplore-ieee-org.ejournals.um.edu.mt/document/9388499"],
+    ["Cyberbullying Detection and Machine Learning Approaches", "Technological, Social", "https://www.proquest.com/compscijour/docview/2879629897/CF4150AE3A9F48DAPQ/2?accountid=27934&sourcetype=Scholarly%20Journals"],
+    ["Detecting Cyberbullying in Images Using Deep Learning", "Technological", "https://dl-acm-org.ejournals.um.edu.mt/doi/pdf/10.1145/3759023.3759100"],
+    ["Detecting Flagged Comments by Analyzing User Behavior Features", "Technological, Social", "https://dl-acm-org.ejournals.um.edu.mt/doi/pdf/10.1145/3762329.3762369"],
+    ["Detecting Hate Speech in Memes", "Technological, Social", "https://www.proquest.com/compscijour/docview/2867414902/801FF5F678A64A08PQ/23?accountid=27934&sourcetype=Scholarly%20Journals"],
+    ["A BERT-CNN Hybrid Model for Multilingual Hate Speech Detection with Integrated Interpretability", "Technological", "https://ieeexplore-ieee-org.ejournals.um.edu.mt/document/11411657"],
+    ["A Comparative Study of Machine Learning Approaches for Cyberbullying Detection in Digital Forums", "Technological", "https://ieeexplore-ieee-org.ejournals.um.edu.mt/document/10466143"],
+    ["A Hybrid Classifier of Cyberbullying Detection in Social Media Platforms", "Technological", "https://ieeexplore-ieee-org.ejournals.um.edu.mt/document/10060739"],
+    ["A Survey of Cyberbullying Detection Methods", "Technological, Social", "https://www.proquest.com/compscijour/docview/2921076192/Record/B30966B93C114E40PQ/2?accountid=27934&sourcetype=Scholarly%20Journals"],
+    ["Abusive Comment Identification", "Technological, Social", "https://www.proquest.com/compscijour/docview/2766699854/801FF5F678A64A08PQ/32?accountid=27934&sourcetype=Scholarly%20Journals"],
+    ["Advances in Machine Learning Algorithms for Hate Speech Detection in Social Media: A Review", "Technological", "https://ieeexplore-ieee-org.ejournals.um.edu.mt/document/9455353"],
+    ["AI Powered Anti-Cyber Bullying Systems", "Technological, Social", "https://www.proquest.com/compscijour/pagepdf/2681641798/Record/B30966B93C114E40PQ/5?accountid=27934&sourcetype=Scholarly%20Journals"],
+    ["An Adaptive Learning Model for Cyberbullying Severity Analysis in Professional Networks", "Technological, Social", "https://ieeexplore-ieee-org.ejournals.um.edu.mt/document/11411427"],
+    ["Analyzing Cyberaggression: Comparative Model Performance on Social Media", "Technological, Social", "https://dl-acm-org.ejournals.um.edu.mt/doi/pdf/10.1145/3701268.3701270"],
+    ["Automatic Labelling of Malay Cyberbullying Twitter Corpus Using Sentiment Emotion and Toxicity Polarities", "Technological, Social", "https://dl-acm-org.ejournals.um.edu.mt/doi/10.1145/3446132.3446412"],
+    ["CLARITY: A Lightweight Multimodal Transformer for Harmful Content Detection", "Technological", "https://ieeexplore-ieee-org.ejournals.um.edu.mt/document/11089962"],
+    ["Confronting Abusive Language Online", "Technological, Social, Legal, Political", "https://www.proquest.com/compscijour/docview/2553248924/CF4150AE3A9F48DAPQ/4?accountid=27934&sourcetype=Scholarly%20Journals"],
+    ["Content Moderation by Large Language Models", "Technological, Social, Legal", "https://www.proquest.com/compscijour/docview/3231549367/6DA96718721A4A04PQ/24?accountid=27934&sourcetype=Scholarly%20Journals"],
+    ["Cross Lingual Few Shot Hate Speech and Offensive Language Detection Using Meta Learning", "Technological", "https://ieeexplore-ieee-org.ejournals.um.edu.mt/document/9696324"],
+    ["Cyber Bullying Detection and Classification Using Machine Learning Algorithms", "Technological, Social", "https://ieeexplore-ieee-org.ejournals.um.edu.mt/document/10803176"],
+    ["Textual Variations in Social Media", "Social, Technological", "https://www.proquest.com/compscijour/docview/3154979951/CF4150AE3A9F48DAPQ/5?accountid=27934&sourcetype=Scholarly%20Journals"],
+    ["The Phenomenon of Deep Nudes: A New Threat to Children and Adults", "Social, Legal, Technological", "https://www.proquest.com/compscijour/docview/3299588230/6DA96718721A4A04PQ/10?accountid=27934&sourcetype=Scholarly%20Journals"],
+    ["Transformer Models for Text Based Cyberbullying Detection", "Technological", "https://www.proquest.com/compscijour/docview/2588185227/801FF5F678A64A08PQ/35?accountid=27934&sourcetype=Scholarly%20Journals"],
+    ["Transformer Based Approach to Cyberbullying Detection Using Fine Tuned DistilBERT", "Technological", "https://ieeexplore-ieee-org.ejournals.um.edu.mt/document/11404813"],
+    ["Unraveling Cyberbullying Dynamics: A Computational Framework Empowered by Artificial Intelligence", "Technological, Social", "https://research-ebsco-com.ejournals.um.edu.mt/c/37fd6e/search/details/pd6m3pztxr?db=inh"],
+    ["Using AI Based Virtual Companions to Assist Adolescents with Autism in Recognizing and Addressing Cyberbullying", "Social, Technological", "https://research-ebsco-com.ejournals.um.edu.mt/c/37fd6e/search/details/is5wsthrqb?db=inh"],
+    ["Utilizing Technology to Detect Bullying in the Workplace: A Systematic Review", "Social, Technological, Economic", "https://dl-acm-org.ejournals.um.edu.mt/doi/pdf/10.1145/3669754.3669818"],
+    ["Efficiency of LLMs in Identifying Abusive Language Online", "Technological", "https://dl-acm-org.ejournals.um.edu.mt/doi/pdf/10.1145/3701268.3701269"],
+    ["Exploring the Effective Nodes of Interventions for Cyberbullying Victimization and Anxiety Symptoms", "Social", "https://dl-acm-org.ejournals.um.edu.mt/doi/pdf/10.1145/3724504.3724628"],
+    ["Fairness for Unobserved Characteristics: Insights from Technological Systems", "Social, Legal, Technological", "https://dl-acm-org.ejournals.um.edu.mt/doi/pdf/10.1145/3461702.3462540"],
+    ["How Do You Feel? Measuring User Perceived Value for Rejecting Machine Decisions in Hate Speech Detection", "Social, Technological", "https://dl-acm-org.ejournals.um.edu.mt/doi/pdf/10.1145/3600211.3604655"],
+    ["Machine Learning Techniques to Detect Cyber Bullying", "Technological", "https://ieeexplore-ieee-org.ejournals.um.edu.mt/document/10220908"],
+    ["Multimodal Text Image Based Cyberbullying Detection with Deep Learning", "Technological", "https://ieeexplore-ieee-org.ejournals.um.edu.mt/document/10466143"],
+    ["NETRA: An AI Powered Cybercrime Reporting and Analysis System", "Technological, Legal", "https://ieeexplore-ieee-org.ejournals.um.edu.mt/document/11413391"],
+    ["Offensive Language Detection on Social Media Based on Text Classification", "Technological, Social", "https://ieeexplore-ieee-org.ejournals.um.edu.mt/document/9720804"],
+    ["Socially Responsible AI Algorithms", "Technological, Legal, Social", "https://www.proquest.com/compscijour/docview/2567810971/CF4150AE3A9F48DAPQ/1?accountid=27934&sourcetype=Scholarly%20Journals"],
+    ["SoK Hate Harassment and the Changing Landscape of Online Abuse", "Social, Political, Legal", "https://ieeexplore-ieee-org.ejournals.um.edu.mt/document/9519435"],
+    ["T Bot AI Based Social Media Bot Detection Model for Trend Centric Twitter Network", "Technological", "https://www.proquest.com/compscijour/docview/2920549535/Record/B30966B93C114E40PQ/3?accountid=27934&sourcetype=Scholarly%20Journals"],
     // ─────────────────────────────────────────────────────────────────────────
   ];
 
@@ -101,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try { parsed = JSON.parse(e.data); }
         catch (_) { reject(new Error("Could not parse result: " + e.data)); return; }
 
-        // Gradio 6 returns array: [ { "Harmful Content": 0.78, ... } ]
+        // Gradio 6 returns array: [ { "Harmful": 0.78, "Non-Harmful": 0.21 } ]
         const result = Array.isArray(parsed) ? parsed[0] : parsed;
         if (!result || typeof result !== "object") {
           reject(new Error("Unexpected result shape: " + e.data)); return;
@@ -163,13 +200,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function showResult(top, allScores, modelName) {
-    const isHarmful = top.label === "Harmful Content";
+    const isHarmful = top.label.toLowerCase().includes("harmful") && !top.label.toLowerCase().includes("non");
     const cls       = isHarmful ? "result-harmful" : "result-safe";
     const icon      = isHarmful ? "⚠️" : "✅";
     const pct       = (top.score * 100).toFixed(1);
 
     const barsHtml = allScores.map(item => {
-      const isH    = item.label === "Harmful Content";
+      const isH    = item.label.toLowerCase().includes("harmful") && !item.label.toLowerCase().includes("non");
       const barCls = isH ? "harmful" : "safe";
       const w      = (item.score * 100).toFixed(1);
       return `
