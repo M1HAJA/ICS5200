@@ -66,11 +66,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const MODELS = {
     bertu: {
       gradioName: "BERTu",
-      note: "BERTu — Maltese-specific transformer. Best overall performance (Macro F1: 0.867)."
+      note: "Maltese-specific transformer"
     },
     mbertu: {
       gradioName: "mBERTu",
-      note: "mBERTu — Multilingual transformer further trained on Maltese. (Macro F1: 0.839)."
+      note: "Multilingual transformer"
     }
   };
 
